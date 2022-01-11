@@ -1,3 +1,4 @@
+import { SignInButton } from 'components/SignInButton/intex';
 import styles from './styles.module.scss';
 
 export function Header(props:any) {
@@ -9,6 +10,7 @@ export function Header(props:any) {
                     <a className={styles.active}>Home</a>
                     <a id='active'>Posts</a>
                 </nav>
+                <SignInButton/>
             </div>
         </header>
     )
