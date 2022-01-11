@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import styles from 'styles/home.module.scss'
 
 export default function Home() {
   return (
@@ -7,9 +8,21 @@ export default function Home() {
         <title>Home | News Leader</title>
       </Head>
 
-      <h1>
-        Home
-      </h1>
+      <main className={styles.contentContainer}>
+        <section className={styles.hero}>
+          <span>👏 Hey, welcomes</span>
+          <h1>
+            New about the <span> React</span> World.
+          </h1>
+          <p>
+            Get acess to all the publications <br/>
+            <span>for $9.90 month</span>
+          </p>
+        </section>
+        
+        <img src='/img/avatar.svg' alt='Girl coding'/>
+        
+      </main>
     </>
   )
 }
